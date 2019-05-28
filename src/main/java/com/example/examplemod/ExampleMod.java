@@ -26,9 +26,10 @@ public class ExampleMod {
 
     public ExampleMod() {
         instance = this;
-        File file = new File("tutorial_item.png");
+
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientRegistries);
+
         MinecraftForge.EVENT_BUS.register(this);
     }
 
@@ -47,15 +48,14 @@ public class ExampleMod {
         public static void registerItems(final RegistryEvent.Register<Item> event) {
             event.getRegistry().registerAll
                     (
-                        ItemList.tutorial_item = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("tutorial_item"))
+                            ItemList.tutorial_item = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(new ResourceLocation(modid, "tutorial_item")),
+                            ItemList.test1 = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(new ResourceLocation(modid, "test1")),
+                            ItemList.winston = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(new ResourceLocation(modid, "winston"))
                     );
 
             logger.info("Items registered");
         }
 
-        private static ResourceLocation location(String name) {
-            return new ResourceLocation(modid, name);
-        }
     }
 }
 
