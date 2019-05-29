@@ -1,5 +1,6 @@
 {
     "item.examplemod.tutorial_item": "LETS GO",
     "item.examplemod.test1": "POG",
-    "item.examplemod.winston": "Winston BTW"
+    "item.examplemod.winston": "Winston BTW",
+    "block.examplemod.tutorial_block": "Tutorial block"
 }

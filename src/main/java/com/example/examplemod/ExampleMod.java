@@ -1,7 +1,12 @@
 package com.example.examplemod;
 
+import com.example.examplemod.lists.BlockList;
 import com.example.examplemod.lists.ItemList;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.material.Material;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemLilyPad;
 import net.minecraft.util.ResourceLocation;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
@@ -15,6 +20,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import java.io.File;
+import net.minecraft.block.Block;
+
+import javax.xml.stream.Location;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("examplemod")
@@ -50,10 +58,25 @@ public class ExampleMod {
                     (
                             ItemList.tutorial_item = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(new ResourceLocation(modid, "tutorial_item")),
                             ItemList.test1 = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(new ResourceLocation(modid, "test1")),
-                            ItemList.winston = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(new ResourceLocation(modid, "winston"))
+                            ItemList.winston = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(new ResourceLocation(modid, "winston")),
+
+
+                            ItemList.tutorial_block = new ItemBlock(BlockList.tutorial_block, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(new ResourceLocation(modid, "tutorial_block"))
                     );
 
             logger.info("Items registered");
+        }
+
+
+@SubscribeEvent
+        public static void registerBlocks(final RegistryEvent.Register<Block> event) {
+            event.getRegistry().registerAll
+                    (
+                            BlockList.tutorial_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f,3.0f).lightValue(10).sound(SoundType.SLIME)).setRegistryName(new ResourceLocation(modid,"tutorial_block"))
+                    );
+
+
+            logger.info("Blocks registered");
         }
 
     }
