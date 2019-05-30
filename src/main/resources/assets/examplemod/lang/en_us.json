@@ -2,5 +2,6 @@
     "item.examplemod.tutorial_item": "LETS GO",
     "item.examplemod.test1": "POG",
     "item.examplemod.winston": "Winston BTW",
-    "itemGroup.tutorial": "Example Item Group"
+    "itemGroup.tutorial": "Example Item Group",
+    "block.examplemod.tutorial_block": "Tutorial block"
 }

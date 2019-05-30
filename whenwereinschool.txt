@@ -1,0 +1,35 @@
+put code here
+//this is a seperate class put in a different file
+
+package some studpid stuff
+
+import examplemod.lists.BlockList;
+import examplemod.lists.ItemList;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
+
+public class ExampleModItemGroup extends ItemGroup {
+
+    public ExampleModItemGroup(){
+        super("tutorial");
+    }
+    
+    @Override
+    public ItemStack createIcon(){
+        return new ItemStack(ItemList.tutorial_item);
+    }
+}
+
+//this is a seperate class put in a different file
+
+
+
+//in examplemod
+
+public static final ItemGroup tutorial = new ExampleModItemGroup();
+//this is a state variable of ExampleMod
+//add "tutorial" to ...Item.Properties().group(tutorial)
+//add "itemGroup.tutorial": "Example Item Group" to en_us.json
+
+//in examplemod

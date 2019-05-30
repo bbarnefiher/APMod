@@ -1,6 +1,8 @@
 package com.example.examplemod;
 
+import com.example.examplemod.lists.BlockList;
 import com.example.examplemod.lists.ItemList;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.ResourceLocation;
 import org.apache.logging.log4j.Logger;
@@ -23,8 +25,6 @@ public class ExampleMod {
     public static ExampleMod instance;
     public static final String modid = "examplemod";
     private static final Logger logger = LogManager.getLogger(modid);
-
-    public static final ItemGroup tutorial = new ExampleModItemGroup();
 
     public ExampleMod() {
         instance = this;
@@ -50,9 +50,11 @@ public class ExampleMod {
         public static void registerItems(final RegistryEvent.Register<Item> event) {
             event.getRegistry().registerAll
                     (
-                            ItemList.tutorial_item = new Item(new Item.Properties().group(tutorial)).setRegistryName(new ResourceLocation(modid, "tutorial_item")),
-                            ItemList.test1 = new Item(new Item.Properties().group(tutorial)).setRegistryName(new ResourceLocation(modid, "test1")),
-                            ItemList.winston = new Item(new Item.Properties().group(tutorial)).setRegistryName(new ResourceLocation(modid, "winston"))
+                            ItemList.tutorial_item = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(new ResourceLocation(modid, "tutorial_item")),
+                            ItemList.test1 = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(new ResourceLocation(modid, "test1")),
+                            ItemList.winston = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(new ResourceLocation(modid, "winston")),
+
+                            ItemList.tutorial_block = new ItemBlock(BlockList.tutorial_block, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(new ResourceLocation(modid, "tutorial_block"))
                     );
 
             logger.info("Items registered");
