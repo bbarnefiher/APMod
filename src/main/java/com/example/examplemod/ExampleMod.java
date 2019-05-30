@@ -8,6 +8,8 @@ import net.minecraft.util.ResourceLocation;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -16,7 +18,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import java.io.File;
+
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("examplemod")
@@ -56,6 +58,16 @@ public class ExampleMod {
                             ItemList.winston = new Item(new Item.Properties().group(tutorial)).setRegistryName(new ResourceLocation(modid, "winston")),
 
                             ItemList.tutorial_block = new ItemBlock(BlockList.tutorial_block, new Item.Properties().group(tutorial)).setRegistryName(new ResourceLocation(modid, "tutorial_block"))
+                    );
+
+            logger.info("Items registered");
+        }
+
+        @SubscribeEvent
+        public static void registerBlocks(final RegistryEvent.Register<Block> event) {
+            event.getRegistry().registerAll
+                    (
+                            BlockList.tutorial_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).lightValue(15)).setRegistryName(new ResourceLocation(modid, "tutorial_block"))
                     );
 
             logger.info("Items registered");
