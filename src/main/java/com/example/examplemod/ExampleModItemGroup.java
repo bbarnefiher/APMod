@@ -1,6 +1,6 @@
 package com.example.examplemod;
 
-//import com.example.examplemod.lists.BlockList;
+import com.example.examplemod.lists.BlockList;
 import com.example.examplemod.lists.ItemList;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
