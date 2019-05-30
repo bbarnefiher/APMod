@@ -1,0 +1,7 @@
+{
+  "type": "minecraftsmelting",
+  "ingredient": { "tag":  "examplemod:tutorial_ore" },
+  "result": { "item": "examplemod:tutorial_ingot" },
+  "experience": 2.3,
+  "cookingtime": 200
+}
