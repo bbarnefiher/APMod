@@ -66,7 +66,8 @@ public class ExampleMod {
                             ItemList.tutorial_ingot = new Item(new Item.Properties().group(tutorial)).setRegistryName(new ResourceLocation(modid, "tutorial_ingot")),
 
                             ItemList.tutorial_ore = new ItemBlock(BlockList.tutorial_ore, new Item.Properties().group(tutorial)).setRegistryName(new ResourceLocation(modid, "tutorial_ore")),
-                            ItemList.tutorial_block = new ItemBlock(BlockList.tutorial_block, new Item.Properties().group(tutorial)).setRegistryName(new ResourceLocation(modid, "tutorial_block"))
+                            ItemList.tutorial_block = new ItemBlock(BlockList.tutorial_block, new Item.Properties().group(tutorial)).setRegistryName(new ResourceLocation(modid, "tutorial_block")),
+                            ItemList.big_winston = new ItemBlock(BlockList.big_winston, new Item.Properties().group(tutorial)).setRegistryName(new ResourceLocation(modid, "big_winston"))
 
                     );
 
@@ -79,7 +80,8 @@ public class ExampleMod {
             event.getRegistry().registerAll
                     (
                             BlockList.tutorial_ore = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0f, 3.0f).lightValue(0).sound(SoundType.METAL)).setRegistryName(new ResourceLocation(modid, "tutorial_ore")),
-                            BlockList.tutorial_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f,3.0f).lightValue(10).sound(SoundType.SLIME)).setRegistryName(new ResourceLocation(modid,"tutorial_block"))
+                            BlockList.tutorial_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f,3.0f).lightValue(10).sound(SoundType.SLIME)).setRegistryName(new ResourceLocation(modid,"tutorial_block")),
+                            BlockList.big_winston = new Block(Block.Properties.create(Material.CACTUS).hardnessAndResistance(2.0f,3.0f).lightValue(10).sound(SoundType.SLIME)).setRegistryName(new ResourceLocation(modid,"big_winston"))
                     );
 
 
