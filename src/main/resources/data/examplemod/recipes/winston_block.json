@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients":
+          [
+            { "item": "examplemod:winston"},
+            { "item": "examplemod:winston"},
+            { "item": "examplemod:winston"},
+            { "item": "examplemod:winston"},
+            { "item": "examplemod:winston"},
+            { "item": "examplemod:winston"},
+            { "item": "examplemod:winston"},
+            { "item": "examplemod:winston"},
+            { "item": "examplemod:winston"}
+          ],
+  "result": { "item": "examplemod:winston_block"},
+  "count": 9
+}

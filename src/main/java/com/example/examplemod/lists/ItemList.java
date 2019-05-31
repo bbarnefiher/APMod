@@ -7,6 +7,5 @@ public class ItemList {
     public static Item test1;
     public static Item winston;
     public static Item tutorial_block;
-    public static Item tutorial_ore;
-    public static Item tutorial_ingot;
+    public static Item winston_block;
 }

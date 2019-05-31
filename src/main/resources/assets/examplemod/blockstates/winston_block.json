@@ -1,0 +1,6 @@
+{
+  "variants":
+  {
+    "": { "model": "examplemod:block/winston_block"}
+  }
+}
