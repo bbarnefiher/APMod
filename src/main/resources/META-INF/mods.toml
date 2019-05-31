@@ -27,14 +27,10 @@ logoFile="pog.png" #mandatory
 # A text field displayed in the mod UI
 credits="Thanks for this example mod goes to Java" #optional
 # A text field displayed in the mod UI
-authors="Love, Cheese and small house plants" #optional
+authors="Brian, Sean, and Jake" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-This is a long form description of the mod. You can write whatever you want here
-
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis lacinia magna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sagittis luctus odio eu tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque volutpat ligula eget lacus auctor sagittis. In hac habitasse platea dictumst. Nunc gravida elit vitae sem vehicula efficitur. Donec mattis ipsum et arcu lobortis, eleifend sagittis sem rutrum. Cras pharetra quam eget posuere fermentum. Sed id tincidunt justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-'''
+Hello and welcome to our mod! This mod is being created by three computer science students named Brian, Sean, and Jake. We went through an entire java curriculum that only included console-based programming and decided that we wanted to do some application-based programming. We thought minecraft would be a good idea because it allows us to edit a game that is fairly familiar and also simple. This project has lots of course material in it and it has allowed us to experience how expert programmers make their files and organize their code. Overall, doing this project taught us that there is a level of organizing that goes into programming that allows everything to be less abstract to allow us to program in an efficient and effective environment.'''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.examplemod]] #optional
     # the modid of the dependency
