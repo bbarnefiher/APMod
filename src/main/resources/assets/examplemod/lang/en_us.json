@@ -3,8 +3,8 @@
     "item.examplemod.test1": "POG",
     "item.examplemod.winston": "Winston BTW",
     "itemGroup.tutorial": "Example Item Group",
-    "block.examplemod.tutorial_block": "Tutorial block",
-    "item.examplemod.tutorial_ingot": "Tutorial ingot",
-    "block.examplemod.tutorial_ore": "Tutorial ore",
-    "block.examplemod.big_winston": "Big Winston"
+    "block.examplemod.tutorial_block": "Tutorial Block",
+    "block.examplemod.winston_block": "Winston Block",
+    "item.examplemod.tutorial_ore": "Tutorial Ore",
+    "item.examplemod.cooked_pog": "Cooked Pog"
 }

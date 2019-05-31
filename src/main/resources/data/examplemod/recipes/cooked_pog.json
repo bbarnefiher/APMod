@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+
+  "ingredient": { "tag": "examplemod:cooking_pog"},
+
+  "result": "examplemod:cooked_pog",
+  "experience": 10,
+  "cookingtime": 100
+}
