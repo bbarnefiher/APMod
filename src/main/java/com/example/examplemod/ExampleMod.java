@@ -59,7 +59,10 @@ public class ExampleMod {
 
                             ItemList.tutorial_block = new ItemBlock(BlockList.tutorial_block, new Item.Properties().group(tutorial)).setRegistryName(new ResourceLocation(modid, "tutorial_block")),
 
-                            ItemList.winston_block = new ItemBlock(BlockList.winston_block, new Item.Properties().group(tutorial)).setRegistryName(new ResourceLocation(modid, "winston_block"))
+                            ItemList.winston_block = new ItemBlock(BlockList.winston_block, new Item.Properties().group(tutorial)).setRegistryName(new ResourceLocation(modid, "winston_block")),
+
+                            ItemList.cooked_pog = new Item(new Item.Properties().group(tutorial)).setRegistryName(new ResourceLocation(modid, "cooked_pog"))
+
                     );
 
             logger.info("Items registered");

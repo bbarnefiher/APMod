@@ -4,5 +4,7 @@
     "item.examplemod.winston": "Winston BTW",
     "itemGroup.tutorial": "Example Item Group",
     "block.examplemod.tutorial_block": "Tutorial Block",
-    "block.examplemod.winston_block": "Winston Block"
+    "block.examplemod.winston_block": "Winston Block",
+    "item.examplemod.tutorial_ore": "Tutorial Ore",
+    "item.examplemod.cooked_pog": "Cooked Pog"
 }
