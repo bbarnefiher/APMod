@@ -1,7 +1,10 @@
 package com.example.examplemod;
 
+import com.example.examplemod.items.ItemCustomAxe;
+import com.example.examplemod.items.ItemCustomPickaxe;
 import com.example.examplemod.lists.BlockList;
 import com.example.examplemod.lists.ItemList;
+import com.example.examplemod.lists.ToolMaterialList;
 import com.example.examplemod.world.OreGeneration;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -12,7 +15,7 @@ import net.minecraft.util.ResourceLocation;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -64,6 +67,12 @@ public class ExampleMod {
                             ItemList.test1 = new Item(new Item.Properties().group(tutorial)).setRegistryName(new ResourceLocation(modid, "test1")),
                             ItemList.winston = new Item(new Item.Properties().group(tutorial)).setRegistryName(new ResourceLocation(modid, "winston")),
                             ItemList.tutorial_ingot = new Item(new Item.Properties().group(tutorial)).setRegistryName(new ResourceLocation(modid, "tutorial_ingot")),
+
+                            ItemList.tutorial_axe = new ItemCustomAxe(ToolMaterialList.tutorial, -1.0f, 6.0f, new Item.Properties().group(tutorial)).setRegistryName(new ResourceLocation(modid,"tutorial_axe")),
+                            ItemList.tutorial_hoe = new ItemHoe(ToolMaterialList.tutorial, 6.0f, new Item.Properties().group(tutorial)).setRegistryName(new ResourceLocation(modid,"tutorial_hoe")),
+                            ItemList.tutorial_pickaxe = new ItemCustomPickaxe(ToolMaterialList.tutorial, -2, 6.0f, new Item.Properties().group(tutorial)).setRegistryName(new ResourceLocation(modid,"tutorial_pickaxe")),
+                            ItemList.tutorial_shovel = new ItemSpade(ToolMaterialList.tutorial, -3.0f, 6.0f, new Item.Properties().group(tutorial)).setRegistryName(new ResourceLocation(modid,"tutorial_shovel")),
+                            ItemList.tutorial_sword = new ItemSword(ToolMaterialList.tutorial, 0, 6.0f, new Item.Properties().group(tutorial)).setRegistryName(new ResourceLocation(modid,"tutorial_sword")),
 
                             ItemList.tutorial_ore = new ItemBlock(BlockList.tutorial_ore, new Item.Properties().group(tutorial)).setRegistryName(new ResourceLocation(modid, "tutorial_ore")),
                             ItemList.tutorial_block = new ItemBlock(BlockList.tutorial_block, new Item.Properties().group(tutorial)).setRegistryName(new ResourceLocation(modid, "tutorial_block")),

@@ -10,4 +10,11 @@ public class ItemList {
     public static Item tutorial_ore;
     public static Item tutorial_ingot;
     public static Item big_winston;
+
+    //tools
+    public static Item tutorial_axe;
+    public static Item tutorial_hoe;
+    public static Item tutorial_pickaxe;
+    public static Item tutorial_shovel;
+    public static Item tutorial_sword;
 }

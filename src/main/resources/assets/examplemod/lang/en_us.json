@@ -6,5 +6,11 @@
     "block.examplemod.tutorial_block": "Tutorial block",
     "item.examplemod.tutorial_ingot": "Tutorial ingot",
     "block.examplemod.tutorial_ore": "Tutorial ore",
-    "block.examplemod.big_winston": "Big Winston"
+    "block.examplemod.big_winston": "Big Winston",
+
+    "item.examplemod.tutorial_axe": "Tutorial Axe",
+    "item.examplemod.tutorial_pickaxe": "Tutorial Pickaxe",
+    "item.examplemod.tutorial_hoe": "Tutorial Hoe",
+    "item.examplemod.tutorial_shovel": "Tutorial Shovel",
+    "item.examplemod.tutorial_sword": "Tutorial Sword"
 }
