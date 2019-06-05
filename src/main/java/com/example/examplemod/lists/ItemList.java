@@ -17,4 +17,9 @@ public class ItemList {
     public static Item cobalt_pickaxe;
     public static Item cobalt_shovel;
     public static Item cobalt_sword;
+
+    public static Item cobalt_helmet;
+    public static Item cobalt_chestplate;
+    public static Item cobalt_leggings;
+    public static Item cobalt_boots;
 }

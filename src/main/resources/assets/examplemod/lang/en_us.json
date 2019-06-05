@@ -12,5 +12,10 @@
     "item.examplemod.cobalt_pickaxe": "Cobalt Pickaxe",
     "item.examplemod.cobalt_hoe": "Cobalt Hoe",
     "item.examplemod.cobalt_shovel": "Cobalt Shovel",
-    "item.examplemod.cobalt_sword": "Cobalt Sword"
+    "item.examplemod.cobalt_sword": "Cobalt Sword",
+
+    "item.examplemod.cobalt_helmet": "Cobalt Helmet",
+    "item.examplemod.cobalt_chestplate": "Cobalt Chestplate",
+    "item.examplemod.cobalt_leggings": "Cobalt Leggings",
+    "item.examplemod.cobalt_boots": "Cobalt Boots"
 }
