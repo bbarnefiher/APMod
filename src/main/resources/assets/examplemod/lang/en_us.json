@@ -1,16 +1,16 @@
 {
-    "item.examplemod.tutorial_item": "LETS GO",
+    "item.examplemod.cobalt_ingot": "Cobalt Ingot",
     "item.examplemod.test1": "POG",
     "item.examplemod.winston": "Winston BTW",
     "itemGroup.tutorial": "Example Item Group",
     "block.examplemod.tutorial_block": "Tutorial block",
     "item.examplemod.tutorial_ingot": "Tutorial ingot",
-    "block.examplemod.tutorial_ore": "Tutorial ore",
+    "block.examplemod.cobalt_ore": "Cobalt Ore",
     "block.examplemod.big_winston": "Big Winston",
 
-    "item.examplemod.tutorial_axe": "Tutorial Axe",
-    "item.examplemod.tutorial_pickaxe": "Tutorial Pickaxe",
-    "item.examplemod.tutorial_hoe": "Tutorial Hoe",
-    "item.examplemod.tutorial_shovel": "Tutorial Shovel",
-    "item.examplemod.tutorial_sword": "Tutorial Sword"
+    "item.examplemod.cobalt_axe": "Cobalt Axe",
+    "item.examplemod.cobalt_pickaxe": "Cobalt Pickaxe",
+    "item.examplemod.cobalt_hoe": "Cobalt Hoe",
+    "item.examplemod.cobalt_shovel": "Cobalt Shovel",
+    "item.examplemod.cobalt_sword": "Cobalt Sword"
 }

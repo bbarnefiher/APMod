@@ -2,6 +2,6 @@
   "parent": "item/generated",
   "textures":
   {
-    "layer0": "examplemod:item/tutorial_item"
+    "layer0": "examplemod:item/cobalt_ingot"
   }
 }

@@ -4,7 +4,7 @@ import net.minecraft.block.Block;
 
 public class BlockList {
     public static Block tutorial_block;
-    public static Block tutorial_ore;
+    public static Block cobalt_ore;
     public static Block big_winston;
 
 }

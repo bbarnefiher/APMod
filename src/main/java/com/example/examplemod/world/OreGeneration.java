@@ -18,7 +18,7 @@ public class OreGeneration {
     {
         for (Biome biome: ForgeRegistries.BIOMES){
             CountRangeConfig tutorial_ore_placement = new CountRangeConfig(1000, 20, 20, 100);
-            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, new CompositeFeature<>(Feature.MINABLE, new MinableConfig(MinableConfig.IS_ROCK, BlockList.tutorial_ore.getDefaultState(), 20), new CountRange(), tutorial_ore_placement));
+            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, new CompositeFeature<>(Feature.MINABLE, new MinableConfig(MinableConfig.IS_ROCK, BlockList.cobalt_ore.getDefaultState(), 20), new CountRange(), tutorial_ore_placement));
         }
 
     }

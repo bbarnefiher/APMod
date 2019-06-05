@@ -5,16 +5,16 @@ import net.minecraft.item.Item;
 import net.minecraft.item.crafting.Ingredient;
 
 public enum ToolMaterialList implements IItemTier {
-    tutorial(10.0f, 9.0f, 800, 3, 25, ItemList.tutorial_item);
+    tutorial(10.0f, 9.0f, 800, 3, 25, ItemList.cobalt_ingot);
 
     private float attackDamage, efficiency;
-    private int durablity, harvestLevel, enchantability;
+    private int durability, harvestLevel, enchantability;
     private Item repairMaterial;
 
     private ToolMaterialList(float attackDamage, float efficiency, int durability, int hardnessLevel, int enchantability, Item repairMaterial ){
             this.attackDamage = attackDamage;
             this.efficiency = efficiency;
-            this.durablity = durability;
+            this.durability = durability;
             this.enchantability = enchantability;
             this.harvestLevel = hardnessLevel;
             this.repairMaterial = repairMaterial;
@@ -42,7 +42,7 @@ public enum ToolMaterialList implements IItemTier {
 
     @Override
     public int getMaxUses(){
-        return this.durablity;
+        return this.durability;
     }
 
     @Override

@@ -2,7 +2,7 @@
   "parent": "item/handheld",
   "textures":
   {
-    "layer0": "examplemod:item/tutorial_hoe"
+    "layer0": "examplemod:item/cobalt_axe"
   }
 
 }

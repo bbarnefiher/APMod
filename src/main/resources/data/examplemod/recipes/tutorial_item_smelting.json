@@ -1,9 +1,11 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": { "tag": "examplemod:tutorial_ore" },
-  "result": "examplemod:tutorial_item",
-  "experience": 7.7,
-  "cookingtime": 200
+
+  "ingredient": { "tag": "examplemod:cobalt_ore" },
+
+  "result": "examplemod:cobalt_ingot",
+  "experience": 10,
+  "cookingtime": 100
 
 
 }
