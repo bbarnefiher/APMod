@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+          [
+            "C C",
+            "CCC",
+            "CCC"
+          ],
+
+  "key": {
+            "C": {"item": "examplemod:cobalt_ingot"}
+  },
+
+  "result": {"item": "examplemod:cobalt_chestplate"}
+
+
+}
