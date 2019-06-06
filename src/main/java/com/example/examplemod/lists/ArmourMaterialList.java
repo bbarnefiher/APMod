@@ -1,12 +1,18 @@
 package com.examplemod.lists;
 
+import com.example.examplemod.ExampleMod;
+import com.example.examplemod.lists.ItemList;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.Item;
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.SoundEvent;
 
 public enum ArmourMaterialList implements IArmorMaterial {
     example("example", 400, new int[] {8, 10, 9, 7}, 25, ItemList.cobalt_ingot, "entity.ender_dragon.growl", 0.0f);
 
-    private static final int[]max_damage_array = new int[13, 15, 16, 11]
+    private static final int[] max_damage_array = new int[] {13, 15, 16, 11};
     private String name, equipSound;
     private int durability, enchantability;
     private Item repairItem;
@@ -32,7 +38,7 @@ public enum ArmourMaterialList implements IArmorMaterial {
 
     @Override
     public int getDurability(EntityEquipmentSlot slot) {
-        return max_damage_array[slot.getIndex()] = this.durability;
+        return max_damage_array[slot.getIndex()] * this.durability;
     }
 
     @Override

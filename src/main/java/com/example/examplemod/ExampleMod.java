@@ -6,8 +6,10 @@ import com.example.examplemod.lists.BlockList;
 import com.example.examplemod.lists.ItemList;
 import com.example.examplemod.lists.ToolMaterialList;
 import com.example.examplemod.world.OreGeneration;
+import com.examplemod.lists.ArmourMaterialList;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemLilyPad;
@@ -74,11 +76,10 @@ public class ExampleMod {
                             ItemList.cobalt_shovel = new ItemSpade(ToolMaterialList.tutorial, -3.0f, 6.0f, new Item.Properties().group(exModIG)).setRegistryName(new ResourceLocation(modid,"cobalt_shovel")),
                             ItemList.cobalt_sword = new ItemSword(ToolMaterialList.tutorial, 55, 6.0f, new Item.Properties().group(exModIG)).setRegistryName(new ResourceLocation(modid,"cobalt_sword")),
 
-                            ItemList.cobalt_helmet = new ItemArmor(ArmourMaterialList.example, EntityEquipmentSlot.HEAD, new Item.Properties().group(exModIG).setRegistryName(Location"cobalt_hemlet")),
-                            ItemList.cobalt_chestplate = new ItemArmor(ArmourMaterialList.example, EntityEquipmentSlot.CHEST, new Item.Properties().group(exModIG).setRegistryName(Location"cobalt_hemlet")),
-                            ItemList.cobalt_leggings = new ItemArmor(ArmourMaterialList.example, EntityEquipmentSlot.LEGS, new Item.Properties().group(exModIG).setRegistryName(Location"cobalt_hemlet")),
-                            ItemList.cobalt_boots = new ItemArmor(ArmourMaterialList.example, EntityEquipmentSlot.FEET, new Item.Properties().group(exModIG).setRegistryName(Location"cobalt_hemlet")),
-
+                            ItemList.cobalt_helmet = new ItemArmor(ArmourMaterialList.example, EntityEquipmentSlot.HEAD, new Item.Properties().group(exModIG)).setRegistryName(new ResourceLocation(modid, "cobalt_helmet")),
+                            ItemList.cobalt_chestplate = new ItemArmor(ArmourMaterialList.example, EntityEquipmentSlot.CHEST, new Item.Properties().group(exModIG)).setRegistryName(new ResourceLocation(modid, "cobalt_chestplate")),
+                            ItemList.cobalt_leggings = new ItemArmor(ArmourMaterialList.example, EntityEquipmentSlot.LEGS, new Item.Properties().group(exModIG)).setRegistryName(new ResourceLocation(modid, "cobalt_leggings")),
+                            ItemList.cobalt_boots = new ItemArmor(ArmourMaterialList.example, EntityEquipmentSlot.FEET, new Item.Properties().group(exModIG)).setRegistryName(new ResourceLocation(modid, "cobalt_boots")),
 
                             ItemList.cobalt_ore = new ItemBlock(BlockList.cobalt_ore, new Item.Properties().group(exModIG)).setRegistryName(new ResourceLocation(modid, "cobalt_ore")),
                             ItemList.tutorial_block = new ItemBlock(BlockList.tutorial_block, new Item.Properties().group(exModIG)).setRegistryName(new ResourceLocation(modid, "tutorial_block")),
