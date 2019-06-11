@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+          [
+            "C",
+            "C",
+            "S"
+          ],
+
+  "key": {
+            "C": {"item": "pm:ingot_obsidian"},
+            "S": {"item": "minecraft:stick"}
+  },
+
+  "result": {"item": "pm:sword_obsidian"}
+
+
+}

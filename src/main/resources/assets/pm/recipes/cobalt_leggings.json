@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+          [
+            "CCC",
+            "C C",
+            "C C"
+          ],
+
+  "key": {
+            "C": {"item": "pm:ingot_cobalt"}
+  },
+
+  "result": {"item": "pm:leggings_cobalt"}
+
+
+}

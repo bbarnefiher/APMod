@@ -1,0 +1,28 @@
+itemGroup.pennetab=APMod
+
+item.ingot_obsidian.name=Obsidian Ingot
+item.ingot_cobalt.name=Cobalt Ingot
+
+item.axe_obsidian.name=Obsidian Axe
+item.hoe_obsidian.name=Obsidian Hoe
+item.pickaxe_obsidian.name=Obsidian Pickaxe
+item.shovel_obsidian.name=Obsidian Shovel
+item.sword_obsidian.name=Obsidian Sword
+
+item.axe_cobalt.name=Cobalt Axe
+item.hoe_cobalt.name=Cobalt Hoe
+item.pickaxe_cobalt.name=Cobalt Pickaxe
+item.shovel_cobalt.name=Cobalt Shovel
+item.sword_cobalt.name=Cobalt Sword
+
+item.helmet_obsidian.name=Obsidian Helmet
+item.chestplate_obsidian.name=Obsidian Chestplate
+item.leggings_obsidian.name=Obsidian Leggings
+item.boots_obsidian.name=Obsidian Boots
+
+item.helmet_cobalt.name=Cobalt Helmet
+item.chestplate_cobalt.name=Cobalt Chestplate
+item.leggings_cobalt.name=Cobalt Leggings
+item.boots_cobalt.name=Cobalt Boots
+
+tile.ore_overworld_cobalt.name=Cobalt Ore

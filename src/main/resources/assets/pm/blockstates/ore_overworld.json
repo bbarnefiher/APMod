@@ -1,0 +1,7 @@
+{
+    "variants":
+    {
+        "variant=cobalt": { "model": "pm:ore_overworld_cobalt" }
+    }
+        
+}

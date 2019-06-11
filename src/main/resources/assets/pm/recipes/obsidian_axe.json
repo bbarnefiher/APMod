@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+          [
+            "CC ",
+            "CS ",
+            " S "
+          ],
+
+  "key": {
+            "C": {"item": "pm:ingot_obsidian"},
+            "S": {"item": "minecraft:stick"}
+  },
+
+  "result": {"item": "pm:axe_obsidian"}
+
+
+}

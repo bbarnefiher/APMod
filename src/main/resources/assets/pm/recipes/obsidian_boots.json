@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+          [
+            "   ",
+            "C C",
+            "C C"
+          ],
+
+  "key": {
+            "C": {"item": "pm:ingot_obsidian"}
+  },
+
+  "result": {"item": "pm:boots_obsidian"}
+
+
+}
